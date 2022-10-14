@@ -1,0 +1,96 @@
+@import "config";
+@import "header";
+@import "footer";
+@import "apps";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $primary-color;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: $primary-font;
+
+  a {
+    text-decoration: none;
+  }
+
+  .header {
+    position: fixed;
+
+    .dropdown-button {
+      background-color: rgb(184, 217, 235, 0);
+      color: black;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      height: 60px;
+      width: 100px;
+    }
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dropdown-content {
+      z-index: 1;
+      display: none;
+      height: 100vh;
+      background-color: rgb(184, 217, 235, 0.9);
+      width: fit-content;
+      left: 0;
+      top: 60px;
+      position: fixed;
+    }
+
+    .show {
+      display: block;
+    }
+
+    section {
+      border-radius: 50px;
+      padding: 30px;
+      line-height: 30px;
+      margin: 30px;
+      background-color: $secondary-color;
+
+      h2 {
+        text-align: center;
+        margin: 20px 0 40px 0;
+      }
+
+      .app {
+        background-color: $primary-color;
+      }
+    }
+
+    .app-list {
+      display: flex;
+    }
+  }
+}
+
+//när skärmen är 950px ovh uppåt (MOBILE)
+@media screen and (min-width: 500px) {
+}
+
+//när skärmen är 950px ovh uppåt (TABLET)
+@media screen and (min-width: 700px) {
+}
+
+//när skärmen är 950px ovh uppåt (DESKTOP)
+@media screen and (min-width: 950px) {
+}
