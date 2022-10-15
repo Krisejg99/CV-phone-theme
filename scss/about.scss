@@ -51,6 +51,10 @@
     background-color: $secondary-color;
     width: 100%;
 
+    &:target {
+      scroll-margin-top: 70px;
+    }
+
     .section-list {
       &-item {
         border-bottom: solid 2px black;
@@ -84,14 +88,10 @@
   }
 }
 
-//när skärmen är 950px ovh uppåt (MOBILE)
-@media screen and (min-width: 500px) {
+//när skärmen är 768px ovh uppåt (TABLET)
+@media screen and (min-width: 768px) {
 }
 
-//när skärmen är 950px ovh uppåt (TABLET)
-@media screen and (min-width: 700px) {
-}
-
-//när skärmen är 950px ovh uppåt (DESKTOP)
-@media screen and (min-width: 950px) {
+//när skärmen är 1024px ovh uppåt (DESKTOP)
+@media screen and (min-width: 1024px) {
 }
