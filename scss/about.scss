@@ -25,83 +25,94 @@
   width: 100%;
   height: 100%;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .grid {
+  .dropdown-content {
+    z-index: 1;
+    display: none;
+    height: 100vh;
+    background-color: rgb(184, 217, 235, 0.9);
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 0;
+    top: 60px;
+    position: fixed;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .section {
+    border-radius: 50px;
+    padding: 50px 30px;
+    line-height: 30px;
+    background-color: $secondary-color;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 60px;
+
+    &:target {
+      scroll-margin-top: 60px;
+    }
+
+    &-content {
+      &-list {
+        border-bottom: solid 2px black;
+
+        h4 {
+          color: $text-color;
+        }
+      }
+
+      .section-content-list-top {
+        border-top: solid 2px black;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    li {
+      margin: 50px 0;
+    }
+
+    .app {
+      background-color: $primary-color;
+    }
+  }
+
+  .socials-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .dropdown-content {
-      z-index: 1;
-      display: none;
-      height: 100vh;
-      background-color: rgb(184, 217, 235, 0.9);
-      width: fit-content;
-      left: 0;
-      top: 60px;
-      position: fixed;
-    }
-
-    .show {
-      display: block;
-    }
-
-    section {
-      border-radius: 50px;
-      padding: 50px 30px;
-      line-height: 30px;
-      background-color: $secondary-color;
-      width: 100%;
-      margin-bottom: 60px;
-
-      &:target {
-        scroll-margin-top: 60px;
-      }
-
-      .section-list {
-        &-item {
-          border-bottom: solid 2px black;
-
-          h4 {
-            color: $text-color;
-          }
-        }
-
-        .section-li-top {
-          border-top: solid 2px black;
-        }
-      }
-
-      h2 {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      li {
-        margin: 50px 0;
-      }
-
-      .app {
-        background-color: $primary-color;
-      }
-    }
-
-    .socials-list {
-      display: flex;
-    }
   }
 }
 
 //när skärmen är 768px ovh uppåt (TABLET)
 @media screen and (min-width: 768px) {
   .main {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(10, 10%);
+    .section {
+      &-content {
+        &-list {
+          display: flex;
+          justify-content: space-between;
 
-    .about-section {
-      grid-column-start: 1;
-      grid-row-end: span 7;
+          li {
+            width: 300px;
+          }
+
+          .li-left {
+            padding-left: 30px;
+          }
+
+          .li-right {
+            padding-right: 30px;
+          }
+        }
+      }
     }
   }
 }
