@@ -90,12 +90,51 @@
     .strengths-graph {
       .strengths-graph-item {
         display: flex;
-        .graph-pillar-html {
+        flex-direction: column;
+        margin: 50px 0;
+
+        .program {
+          display: flex;
+          margin-bottom: 10px;
+          width: 160px;
+
+          i {
+            color: $text-color;
+            font-size: 30px;
+          }
+
+          h3 {
+            margin-left: 10px;
+          }
+
+          h4 {
+            color: $text-color;
+            font-size: 25px;
+          }
+        }
+
+        .graph-pillar {
           width: 100%;
-          height: 30px;
-          border: 1px solid black;
+          height: 15px;
+          display: flex;
+          justify-content: space-between;
+
+          .gps-full {
+            background-color: $primary-color;
+          }
+        }
+
+        .graph-pillar-section {
+          border: 1px solid $primary-color;
+          border-radius: 20px;
+          height: 100%;
+          width: 19%;
         }
       }
+    }
+
+    .languages {
+      border-top: solid 2px black;
     }
   }
 
@@ -118,7 +157,13 @@
         }
 
         &-text {
-          padding-left: 1.5rem;
+          margin-left: 1.5rem;
+        }
+
+        a {
+          p {
+            text-decoration-line: underline;
+          }
         }
       }
     }
@@ -128,6 +173,12 @@
 @media screen and (min-width: 425px) {
   .section-content-list {
     padding: 0 30px;
+  }
+
+  #strengths-section {
+    .strengths-graph {
+      padding: 0 30px;
+    }
   }
 }
 
@@ -168,6 +219,21 @@
 
           .li-left {
             padding-right: 30px;
+          }
+        }
+      }
+    }
+
+    #strengths-section {
+      .strengths-graph {
+        .strengths-graph-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 50px;
+
+          .program {
+            margin: 0;
           }
         }
       }
