@@ -39,6 +39,11 @@
     left: 0;
     top: 60px;
     position: fixed;
+
+    .app-list {
+      height: calc(100% - 60px);
+      overflow: auto;
+    }
   }
 
   .show {
