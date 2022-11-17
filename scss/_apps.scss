@@ -1,19 +1,33 @@
 .app-list {
 	padding: 0;
 
-	.app-list-item {
-		width: 100px;
-		height: 100px;
+	&-item {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		height: 92.5px;
+		margin: 0 20px 7.5px 20px;
+
+		&:hover {
+			margin: calc(0px - 5px) 20px calc(7.5px + 5px) 20px;
+
+			.app {
+				i {
+					color: rgb(94, 94, 94);
+				}
+			}
+		}
 
 		.app {
 			height: 60px;
 			background-color: $secondary-color;
 			width: 60px;
 			border-radius: 30%;
+			box-shadow: 0.5px 0.5px $text-color;
+
+			&:hover {
+				box-shadow: 0.5px 3px $text-color;
+			}
 
 			i {
 				display: flex;
@@ -29,7 +43,8 @@
 		h2 {
 			font-size: 0.8rem;
 			text-align: center;
-			margin-top: 5px;
+			padding-top: 5px;
+			height: 20px;
 		}
 	}
 }
