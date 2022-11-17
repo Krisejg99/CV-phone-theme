@@ -29,11 +29,18 @@
 			h1 {
 				font-size: 3rem;
 				line-height: 3rem;
+				color: rgb(39, 39, 39);
+
+				.last-name {
+					font-size: 3.5rem;
+					color: rgb(186, 0, 37);
+				}
 			}
+
 			h2 {
 				font-size: 1.3rem;
 				color: $text-color;
-				margin-top: 1rem;
+				margin-top: 1.5rem;
 			}
 		}
 	}
@@ -82,8 +89,8 @@
 
 			.titles {
 				h1 {
-					font-size: 4rem;
-					line-height: 4rem;
+					// font-size: 4rem;
+					// line-height: 4rem;
 				}
 			}
 		}
