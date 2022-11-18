@@ -7,27 +7,29 @@
 	display: flex;
 	justify-content: space-evenly;
 
-	a {
+	.home-wrapper {
 		height: 100%;
 		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
 
-		.home-wrapper {
-			height: 100%;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-
+		&:hover {
 			.home-button {
-				background-color: black;
-				height: 30%;
-				width: 95%;
-				align-self: center;
-				border-radius: 20px;
-				text-align: center;
-				font-size: 0;
+				// margin-bottom: 5px;
+				height: 40%;
 			}
+		}
+
+		.home-button {
+			background-color: black;
+			height: 30%;
+			width: 95%;
+			align-self: center;
+			border-radius: 20px;
+			text-align: center;
+			font-size: 0;
 		}
 	}
 }
