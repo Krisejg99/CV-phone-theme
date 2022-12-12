@@ -102,6 +102,18 @@
 		}
 	}
 
+	#about-section {
+		padding-bottom: 30px;
+		p,
+		h3,
+		ul {
+			margin: 0 30px;
+		}
+		h3 {
+			margin-bottom: 0.7rem;
+		}
+	}
+
 	#strengths-section {
 		.strengths-graph {
 			border-top: solid 2px black;
@@ -167,7 +179,7 @@
 			text-align: center;
 			justify-content: center;
 			.project {
-				margin: 25px;
+				margin: 0 25px 25px;
 				h3 {
 					margin-bottom: 0.5rem;
 				}
