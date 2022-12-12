@@ -155,6 +155,34 @@
 		}
 	}
 
+	#project-section {
+		padding-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.projects {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			.project {
+				margin: 25px;
+				h3 {
+					margin-bottom: 0.5rem;
+				}
+
+				a {
+					img {
+						max-width: 300px;
+						width: 100%;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+
 	#social-section {
 		padding-bottom: 30px;
 		margin: 0;
@@ -260,6 +288,12 @@
 						align-self: right;
 					}
 				}
+			}
+		}
+
+		#project-section {
+			.projects {
+				flex-direction: row;
 			}
 		}
 	}
