@@ -1,35 +1,47 @@
 .app-list {
-  padding: 0;
+	padding: 0;
 
-  .app-list-item {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 80px;
+		margin: 0 20px 20px 20px;
 
-    .app {
-      height: 60px;
-      background-color: $secondary-color;
-      width: 60px;
-      border-radius: 30%;
+		&:hover {
+			margin: calc(0px - 5px) 20px calc(20px + 5px) 20px;
 
-      i {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        font-size: 2rem;
-        color: rgb(96, 96, 96);
-      }
-    }
+			.app {
+				box-shadow: 0.5px 3px $text-color;
+				i {
+					color: rgb(94, 94, 94);
+				}
+			}
+		}
 
-    h2 {
-      font-size: 0.8rem;
-      text-align: center;
-      margin-top: 5px;
-    }
-  }
+		.app {
+			height: 60px;
+			background-color: $secondary-color;
+			width: 60px;
+			border-radius: 30%;
+			box-shadow: 0.5px 0.5px $text-color;
+
+			i {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				font-size: 2rem;
+				color: $text-color;
+			}
+		}
+
+		h2 {
+			font-size: 0.8rem;
+			text-align: center;
+			padding-top: 5px;
+			height: 20px;
+		}
+	}
 }
