@@ -5,13 +5,14 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 92.5px;
-		margin: 0 20px 7.5px 20px;
+		height: 80px;
+		margin: 0 20px 20px 20px;
 
 		&:hover {
-			margin: calc(0px - 5px) 20px calc(7.5px + 5px) 20px;
+			margin: calc(0px - 5px) 20px calc(20px + 5px) 20px;
 
 			.app {
+				box-shadow: 0.5px 3px $text-color;
 				i {
 					color: rgb(94, 94, 94);
 				}
@@ -24,10 +25,6 @@
 			width: 60px;
 			border-radius: 30%;
 			box-shadow: 0.5px 0.5px $text-color;
-
-			&:hover {
-				box-shadow: 0.5px 3px $text-color;
-			}
 
 			i {
 				display: flex;

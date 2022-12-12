@@ -47,16 +47,16 @@
 
 			&-item {
 				&:hover {
-					margin: calc(0px - 3px) 15px calc(7.5px + 3px) 20px;
+					margin: calc(0px - 3px) 15px calc(20px + 3px) 20px;
+
+					.app {
+						box-shadow: -3px 0.5px $text-color;
+					}
 				}
 			}
 
 			.app {
 				box-shadow: -0.5px 0.5px $text-color;
-
-				&:hover {
-					box-shadow: -3px 0.5px $text-color;
-				}
 			}
 		}
 	}
